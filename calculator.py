@@ -14,31 +14,32 @@ def invalid_number(number_str):
 
     return False
 
+lang = 'spanish'
 continue_message = 'yes'
 
-prompt(MESSAGES["welcome"])
+prompt(MESSAGES[lang]["welcome"])
 
 while continue_message == 'yes':
 
-    prompt(MESSAGES["first_number"])
+    prompt(MESSAGES[lang]["first_number"])
     number1 = input()
 
     while invalid_number(number1):
-        prompt(MESSAGES["invalid_number"])
+        prompt(MESSAGES[lang]["invalid_number"])
         number1 = input()
 
-    prompt(MESSAGES["second_number"])
+    prompt(MESSAGES[lang]["second_number"])
     number2 = input()
 
     while invalid_number(number2):
-        prompt(MESSAGES["invalid_number"])
+        prompt(MESSAGES[lang]["invalid_number"])
         number2 = input()
 
-    prompt(MESSAGES["operation"])
+    prompt(MESSAGES[lang]["operation"])
     operation = input()
 
     while operation not in ["1", "2", "3", "4"]:
-        prompt(MESSAGES["invalid_operation"])
+        prompt(MESSAGES[lang]["invalid_operation"])
         operation = input()
 
     match operation:
@@ -51,6 +52,6 @@ while continue_message == 'yes':
         case "4":
             output = int(number1) / int(number2)
 
-    prompt(f'{MESSAGES["result"]}{output}')
-    prompt(MESSAGES["continue"])
+    prompt(f'{MESSAGES[lang]["result"]}{output}')
+    prompt(MESSAGES[lang]["continue"])
     continue_message = input()

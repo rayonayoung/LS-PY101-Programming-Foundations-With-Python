@@ -1,4 +1,4 @@
-{
+{"english":{
     "welcome" : "Welcome to Calculator!",
     "first_number" : "What's the first number?",
     "second_number" : "What's the second number?",
@@ -7,4 +7,17 @@
     "invalid_operation" : "You must choose 1, 2, 3, or 4",
     "result" : "The result is ",
     "continue" : "Perform another calculation?"
+},
+
+"spanish":{
+    "welcome" : "¡Bienvenidos a la Calculadora!",
+    "first_number" : "¿Cuál es el primer número?",
+    "second_number" : "¿Cuál es el segundo número?",
+    "invalid_number" : "Hmm... eso no parece un número válido.",
+    "operation" : "¿Qué operación te gustaría realizar?\n 1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+    "invalid_operation" : "Debes elegir 1, 2, 3 o 4",
+    "result" : "El resultado es ",
+    "continue" : "¿Deseas realizar otro cálculo?"
+
+}
 }
