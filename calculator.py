@@ -16,9 +16,10 @@ elif operation == 3:
     output = num1 * num2
 elif operation == 4:
     output = num1 / num2
+
+print('Testing dev branch')
 print(f'The result is: {output}')
 
-#Testing development branch.
 
 
 
