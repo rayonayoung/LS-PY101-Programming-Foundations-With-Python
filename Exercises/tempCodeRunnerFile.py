@@ -1,0 +1,1 @@
+print(twice(44))  
